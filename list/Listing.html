@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Online Watch Store</title>
+</head>
+
+ <body>
+<header  class="allheader">
+        <div class="upmenu1">
+            <p><a href="#">All of our stores are now open. Find your nearest store ></a></p>
+        </div>
+        <div class="upmenu2">
+            <div class="" style="font-size:10px;"><a href="#">CALL 08989764</a></div>
+            <ul class="responsive1">
+                <li><a href="#">Store locator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Watch Servicing</a></li>
+                <li><a href="#">Jewellery Servicing</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="header">
+            <img class="logowatch" src="../logowatch.jpg"  width="70" height="70" alt="watchlogo">
+            
+            <div class="search-container">
+                <form class="formsearch" action="/action_page.php">
+                  <input type="text" placeholder="Search product brand..." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+            
+            <div class="retailpic">
+            <img src="watch/officialVacheron_Logo.png" width="70" height="70" alt="officialVacheron_Logo" />
+            
+            <ul>
+            <li></li>
+            <li><a>Your cart</a></li>
+            <li><a href="login/login.html">Login</a></li> 
+            <li><a>Register</a></li>
+           </ul>
+           </div>
+        </div>
+        <div class="menu">
+        <ul class="submenu1">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="Listing.html">Watches</a></li>
+        <li><a href="../index.html">Best offers</a></li>
+        <li><a href="../index.html">Inspiration&Advice</a></li>
+        <li><a href="#" style="color:red;"><b>Sale</b></a></li>
+        <li><a href="../index.html">Just In</a></li>
+        <li><a href="../index.html" >High Luxury</a></li>
+        <li><a href="#" >Pre-owned</a></li>
+        </ul>
+        <div class="submenu2">
+        <ul>
+            <li><a>Free Delivery On Orders Over £100</a></li>
+            <li><a><span class="heading">Trust pilot</span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </a></li>
+            <li><a>0%Apr Up To 4 Years Interest Free Finance</a></li>
+        </ul>
+        </div>
+    </div>
+</header>
+
+
+       <!--Watch item section-->
+       <div id="myBtnContainer1">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn1" onclick="filterSelection('omega')"> Omega</button>
+        <button class="btn1" onclick="filterSelection('breguet')"> Breguet</button>
+        <button class="btn1" onclick="filterSelection('longines')"> Longines</button>
+        <button class="btn1" onclick="filterSelection('sale')" style="color:red;"> Sale</button>
+        <button class="btn1" onclick="filterSelection('colors')"> Basket</button>
+      </div>
+
+       <section id="myBtnContainer">
+        <h1>...</h1>
+        <section class="container content-section omega filterDiv">
+            <h2 class="section-header">Omega Watches</h2>
+            <div class="shop-items toggler">
+                <div class="shop-item ">
+                    <span class="shop-item-title">Omega Speedmaster</span>
+                    <img class="shop-item-image" src="watch/omega1.jpg" alt="omega1">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                   <!-- <div class="element">
+                        <img src="watch/omega1.jpg" >
+                        Acest ceas este unic
+                    </div> -->
+                </div>
+                <div class="shop-item omega filterDiv" >
+                    <span class="shop-item-title">OMEGA Seamaster </span>
+                    <img class="shop-item-image" src="watch/omega2.jpg" alt="omega2">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1299</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item omega filterDiv">
+                    <span class="shop-item-title">Omega Aqua</span>
+                    <img class="shop-item-image" src="watch/omega3.jpg" alt="omega3">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1099</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item omega filterDiv">
+                    <span class="shop-item-title">Omega Seamaster W</span>
+                    <img class="shop-item-image" src="watch/omega4.jpg" alt="omega4">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1599</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section breguet filterDiv">
+            <h2 class="section-header">Breguet Watches</h2>
+            <div class="shop-items">
+                <div class="shop-item ">
+                    <span class="shop-item-title">Breguet1</span>
+                    <img class="shop-item-image" src="watch/breguet1.jpg" alt="breguet1">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1999</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item breguet filterDiv">
+                    <span class="shop-item-title">Breguet Marine</span>
+                    <img class="shop-item-image" src="watch/breguet2.jpg" alt="breguet2">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item breguet filterDiv">
+                    <span class="shop-item-title">Breguet XX</span>
+                    <img class="shop-item-image" src="watch/breguet3.jpg" alt="breguet3">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item breguet filterDiv">
+                    <span class="shop-item-title">Breguet Gold</span>
+                    <img class="shop-item-image" src="watch/breguet4.jpg" alt="breguet4">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section longines filterDiv">
+            <h2 class="section-header">Longines watches</h2>
+            <div class="shop-items ">
+                <div class="shop-item">
+                    <span class="shop-item-title">Longines Grey L28214116</span>
+                    <img class="shop-item-image" src="watch/longines1.jpg" alt="longines1">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item longines filterDiv">
+                    <span class="shop-item-title">Longines Blue L37814969</span>
+                    <img class="shop-item-image" src="watch/longines2.jpg" alt="longines2">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item longines filterDiv">
+                    <span class="shop-item-title">Longines HydroConquest</span>
+                    <img class="shop-item-image" src="watch/longines3.jpg" alt="longines3">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item longines filterDiv">
+                    <span class="shop-item-title">Longines L28214116</span>
+                    <img class="shop-item-image" src="watch/longines4.jpg" alt="longines4">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!--Sale section-->
+        <section class="container content-section filterDiv sale">
+            <h2 class="section-header">Sale</h2>
+            <div class="shop-items ">
+                <div class="shop-item">
+                    <span class="shop-item-title">TAG Heuer Formula 1 </span>
+                    <img class="shop-item-image" src="watch/tagheur1.jpg" alt="tagheur1">
+                    <div class="" style="color:red;font-weight: bold;"><p>SALE</p></div>
+                    <div class="shop-item-details">
+                        <span class=""><del>£1367</del></span>
+                        <span class="shop-item-price">£1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item longines filterDiv sale">
+                    <span class="shop-item-title">TAG Heuer WAZ1112.BA0875</span>
+                    <img class="shop-item-image" src="watch/tagheur2.jpg" alt="tagheur2">
+                    <div class="" style="color:red;font-weight: bold;"><p>SALE</p></div>
+                    <div class="shop-item-details">
+                        <span class=""><del>£1890</del></span>
+                        <span class="shop-item-price">£1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item longines filterDiv sale">
+                    <span class="shop-item-title">TAG Heuer Monaco</span>
+                    <img class="shop-item-image" src="watch/tagheur3.jpg" alt="tagheur3">
+                    <div class="" style="color:red;font-weight: bold;"><p>SALE</p></div>
+                    <div class="shop-item-details">
+                        <span class=""><del>£1867</del></span>
+                        <span class="shop-item-price">£1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item longines filterDiv sale">
+                    <span class="shop-item-title">TAG Heuer Carrera</span>
+                    <img class="shop-item-image" src="watch/tagheur4.jpg" alt="tagheur4">
+                    <div class="" style="color:red;font-weight: bold;"><p>SALE</p></div>
+                    <div class="shop-item-details">
+                        <span class=""><del>£1800</del></span>
+                        <span class="shop-item-price">£1789</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        <!--End section watch item-->
+
+        <!--Start cart section-->
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <!--End Watch item section-->
+
+        <!--Footer section-->
+        <!--
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">WATCH Brands Direct</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="Images/YouTube Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="Images/Spotify Logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="Images/Facebook Logo.png">
+                        </a>
+                    </li>
+                </ul>
+                <div class="column2 backtop">
+                    <a href="#" class="back-to-top">Back to Top</a>
+                    </div>
+            </div>
+            
+        </footer>
+    -->
+        <!--End Footer-->
+    
+        <script src="store.js" async></script>
+
+
+
+    </body>
+</html>
