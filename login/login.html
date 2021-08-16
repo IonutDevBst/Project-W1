@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylelogin">
+   <!-- <link rel="stylesheet" href="stylelogin"> -->
     <title>Login</title>
     <style>
 .login {
     margin: auto;
     width: 500px;
-    
+  
 }
-input[type=text], input[type=password] {
-  width: 100%;
+input[type=text], input[type=password], input[type=email] {
+
   padding: 12px 20px;
-  margin: 8px 0;
+  margin:  0 130px;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  border-radius: 5px;
 }
 
 button {
@@ -27,6 +28,7 @@ button {
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   width: 100%;
 }
@@ -34,6 +36,31 @@ button {
 button:hover {
   opacity: 0.8;
 }
+/*eMedia login*/
+
+@media only screen and ( max-width:700px ){	
+ 
+    button {
+      width: 40%;
+    }
+    .login{
+      margin: 5px 5px 5px 5px;
+    width: 100px;
+    }
+    input[type=password], input[type=email] {
+
+padding: 12px 20px;
+margin: 8px 8px 0 40px;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+  }
+/*END eMedia login*/
+
+
+
     </style>
 </head>
 <body>
