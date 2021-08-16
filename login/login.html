@@ -1,127 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- <link rel="stylesheet" href="stylelogin"> -->
-    <title>Login</title>
-    <style>
-.login {
-    margin: auto;
-    width: 500px;
-  
-}
-input[type=text], input[type=password], input[type=email] {
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+ <!-- <link rel="stylesheet" href="style.css" /> -->
 
-  padding: 12px 20px;
-  margin:  0 130px;
-  display: inline-block;
+<style>
+  body {
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+input, button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.main-div, .loggedin-div {
+  width: 20%;
+  margin: 0px auto;
+  margin-top: 150px;
+  padding: 20px;
+  display: none;
+}
+
+.main-div input {
+  display: block;
   border: 1px solid #ccc;
-  box-sizing: border-box;
   border-radius: 5px;
-}
-
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  background: #fff;
+  padding: 15px;
+  outline: none;
   width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
 }
 
-button:hover {
-  opacity: 0.8;
-}
-/*eMedia login*/
-
-@media only screen and ( max-width:700px ){	
- 
-    button {
-      width: 40%;
-    }
-    .login{
-      margin: 5px 5px 5px 5px;
-    width: 100px;
-    }
-    input[type=password], input[type=email] {
-
-padding: 12px 20px;
-margin: 8px 8px 0 40px;
-display: inline-block;
-border: 1px solid #ccc;
-box-sizing: border-box;
+.main-div input:focus {
+  border: 1px solid #777;
 }
 
-  }
-/*END eMedia login*/
+.main-div button, .loggedin-div button {
+  background: #5d8ffc;
+  color: #fff;
+  border: 1px solid #5d8ffc;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
 
+.main-div button:hover, .loggedin-div button:hover {
+  background: #fff;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
 
+</style>
 
-    </style>
+  
 </head>
 <body>
-    <div id="modal-signup" class="modal">
-      <div class="modal-content">
-    <form id="signup-form" class="login"  action="/action_page.php" method="post">
-        <fieldset>
-            <legend>Login</legend>
-        <div class="input-field">
-        Email<input type="email" id="signup-email" name="Email" required /><br>
-        Password<input  type="Password" id="signup-password" nume="Password" required /><br>
-        </div>
-        <button type="submit">Login</button>
-        
-          <a href="../index.html">Cancel</a>
-        </fieldset>
-    </form>
-    </div>
+
+  <div id="login_div" class="main-div">
+    <h3>Firebase Web login Example</h3>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+    <button> <a href="../index.html">Home</a></button>
   </div>
-   <!-- <script src="login.js"></script> -->
-    
 
-    
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
-    
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
-    
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
-    
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyAqNHL8U-oknQYA9EWqeG8DYg5LzpomhnA",
-        authDomain: "watch-store-f3082.firebaseapp.com",
-        projectId: "watch-store-f3082",
-        storageBucket: "watch-store-f3082.appspot.com",
-        messagingSenderId: "679558098886",
-        appId: "1:679558098886:web:468300f2c6e1d418130cc7",
-        measurementId: "G-8VQTQGPKM9"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    
-      //make auth and firestore referemces
-      const auth = firebase.auth();
-      const db = firebase.firestore();
-    
-      //update firestore settings
-      db.settings({ timestampsInSnapshots: true })
-    </script>   
-    
-    <script src="http://cdnj.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" ></script>
-    <script src="auth.js"></script>
-    <script src="index.js"></script>
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+    <button> <a href="../index.html">Home</a></button>
+  </div>
 
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAqNHL8U-oknQYA9EWqeG8DYg5LzpomhnA",
+    authDomain: "watch-store-f3082.firebaseapp.com",
+    projectId: "watch-store-f3082",
+    storageBucket: "watch-store-f3082.appspot.com",
+    messagingSenderId: "679558098886",
+    appId: "1:679558098886:web:468300f2c6e1d418130cc7",
+    measurementId: "G-8VQTQGPKM9"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="auth.js"></script>
 
 </body>
 </html>
