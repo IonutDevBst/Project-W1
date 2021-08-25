@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700&amp;subset=latin" /><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    
     <title>Online Watch Store</title>
 </head>
 
@@ -46,8 +46,8 @@
         
         <ul>
         <li></li>
-        <li><a href="#"><img src="list/Images/logo login/cart2.png" width="20" height="20" alt="login" /> Your cart</a></li>
-        <li><a href="login/login.html"><img src="list/Images/logo login/user2.png" width="20" height="20" alt="login" /> Hello.Sign in</a></li>
+        <li><a href="#"><img src="list/Images/logo-login/cart2.png" width="20" height="20" alt="login" /> Your cart</a></li>
+        <li><a href="login/login.html"><img src="list/Images/logo-login/user2.png" width="20" height="20" alt="login" /> Hello.Sign in</a></li>
       <!--  <li><a href="login/login.html">Login</a></li> -->
         </ul>
        </div>
@@ -55,23 +55,27 @@
     <div class="menu">
     <ul class="submenu1">
     <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="list/Listing.html">Watches<img src="list/Images/logo login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
-    <li><a href="#section4">Best offers<img src="list/Images/logo login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
-    <li><a href="#section5">Inspiration&Advice<img src="list/Images/logo login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
-    <li><a href="list/Listing.html" style="color:red;"><b>Sale</b><img src="list/Images/logo login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
-    <li><a href="#">Just In<img src="list/Images/logo login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
-    <li><a href="#section6" >High Luxury<img src="list/Images/logo login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
-    <li><a href="#section7" >Pre-owned<img src="list/Images/logo login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
+    <li><a href="list/Listing.html">Watches<img src="list/Images/logo-login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
+    <li><a href="#section4">Best offers<img src="list/Images/logo-login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
+    <li><a href="#section5">Inspiration&Advice<img src="list/Images/logo-login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
+    <li><a href="list/Listing.html" style="color:red;"><b>Sale</b><img src="list/Images/logo-login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
+    <li><a href="#">Just In<img src="list/Images/logo-login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
+    <li><a href="#section6" >High Luxury<img src="list/Images/logo-login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
+    <li><a href="#section7" >Pre-owned<img src="list/Images/logo-login/triangle.png " width="10" height="10" alt="triangle" /></a></li>
     </ul>
     <div class="submenu2">
-    <ul class="submenu2">
+    <div class="retailpic">
+        <div>
+        <img src="list/Images/delivery.svg" width="30" height="30" alt="delivery" />
+        </div>
+        <div>
+        <ul>
         <li>
-            <img src="list/Images/delivery.svg" width="30" height="30" alt="delivery" />
+            <a> Free Delivery On Orders Over £100</a>
         </li>
-        <li>
-            <a>Free Delivery On Orders Over £100</a>
-        </li>
-    </ul>  
+        </ul>
+        </div>
+    </div>  
     <ul>  
         <li><a> <span class="heading">Trust pilot</span>
             <span class="fa fa-star checked"></span>
@@ -83,9 +87,9 @@
     <ul class="submenu2">
             <li>
                 <img src="list/Images/finance.svg" width="30" height="30" alt="finance" />
-            </li>
+           </li>
         <li>
-            <a>Apr Up To 4 Years Interest Free Finance</a>
+            <a>Up To 4 Years Interest Free Finance</a>
         </li>
         
     </ul>
@@ -93,6 +97,7 @@
 </div>
 </header>
 <!-- End header-->
+
 
 <!--Section Just In -->
 <div class="title active">
@@ -109,9 +114,44 @@
         </div>    
         <p>IWC Portofino Mens Watch</p>
         <p>IW391031</p>
-        <p><b>£2512</b></p>
-        <p>Finance from <a style="color:maroon;">£149.69</a> a month</p>
-    </div>
+
+        <p><b>£5300</b></p>
+        <p>Finance from <a style="color:maroon;">£99.38</a> a month</p>
+        <!--details-->
+        <div>
+        <button class="btn7" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Details</button>
+    
+        <div id="id01" class="modal">
+      
+        <div class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-119-01-0028-close.jpg" alt="Avatar" class="avatar">
+          <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-119-01-0028-hero_1.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <h3>IWC Portofino Mens Watch</h3>
+          <h4>Product specification</h4>
+          <p> This IWC Portofino Mens Watch IW391031 features a 42mm stainless steel case with sapphire glass and applique Roman numerals on its
+               silver plated dial. Powered by the IWC tried 
+              and tested self-winding 75320 calibre with its 44 hour power reserve, this timepiece is presented on a black alligator leather strap.</p>
+         <p> SKU:	2-119-01-0028</p>
+         <p>Model Number:	IW391031</p>
+         <p>Guarantee	2 Year Manufacturer's Guarantee</p>
+         <p>Glass Type:	Sapphire Glass</p>
+         <p>Case Width:	42mm</p>
+         <p>Case Depth:	13.5mm</p>
+         <p>Case Material:	Stainless Steel</p>
+        </div>
+    
+        
+        </div>
+        </div>
+    
+        </div>
+        <!--details-->
+        </div>
     <div class="cell">
         <div class="omega1container image-wrapper"><img class="image-zoom" src="list/watch/vacheron1.jpg" width="200" height="200" alt="watch">
             <div class="topleft2">
@@ -120,8 +160,39 @@
         </div>   
         <p>Vacheron Constantin</p>
         <p>Overseas Chronograph Mens</p>
-        <p><b>£1512</b></p>
+        <p><b>£27500</b></p>
         <p>Finance from <a style="color:maroon;" >£14.69</a> a month</p>
+        <!--details-->
+        <div>
+        <button class="btn7" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Details</button>
+    
+        <div id="id02" class="modal2">
+      
+        <div class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-106-04-0001_1_1.jpg" alt="Avatar" class="avatar">
+          <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-106-04-0001_4.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <h3>IWC Portofino Mens Watch</h3>
+          <h4>Product specification</h4>
+          <p>Vacheron Constantin in-house Caliber 5200, beats at 28,800 vph, composed out of 263 parts,
+             contains 54 Jewels & has an approximate power reserve of 54 hours. Watch is marked with the Geneva Quality Hallmark.</p>
+         <p> SKU:	2-119-01-0028</p>
+         <p>Model Number:	IW391031</p>
+         <p>Guarantee	2 Year Manufacturer's Guarantee</p>
+         <p>Glass Type:	Sapphire Glass</p>
+         <p>Case Width:	42mm</p>
+         <p>Case Depth:	13.5mm</p>
+         <p>Case Material:	Stainless Steel</p>
+        </div>
+    
+        </div>
+        </div>
+        </div>
+        <!--end details button-->
     </div>
     <div class="cell">
         <div class="omega1container image-wrapper"><img class="image-zoom" src="list/watch/rolex1.jpg" width="200" height="200" alt="watch">
@@ -133,6 +204,37 @@
         <p>Diver Mens</p>
         <p><b>£7512</b></p>
         <p>Finance from <a style="color:maroon;" >£354.69</a> a month</p>
+        <!--details-->
+        <div>
+        <button class="btn7" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Details</button>
+    
+        <div id="id03" class="modal3">
+      
+        <div class="modal-content animate">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/2/22-138-11-0221-side.jpg" alt="Avatar" class="avatar">
+          <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/2/22-138-11-0221-back.jpg" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <h3>IWC Portofino Mens Watch</h3>
+          <h4>Product specification</h4>
+          <p>Vacheron Constantin in-house Caliber 5200, beats at 28,800 vph, composed out of 263 parts,
+             contains 54 Jewels & has an approximate power reserve of 54 hours. Watch is marked with the Geneva Quality Hallmark.</p>
+         <p> SKU:	2-119-01-0028</p>
+         <p>Model Number:	IW391031</p>
+         <p>Guarantee	2 Year Manufacturer's Guarantee</p>
+         <p>Glass Type:	Sapphire Glass</p>
+         <p>Case Width:	42mm</p>
+         <p>Case Depth:	13.5mm</p>
+         <p>Case Material:	Stainless Steel</p>
+        </div>
+    
+        </div>
+        </div>
+        </div>
+        <!--details-->
     </div>
     <div class="cell">
         <div class="omega1container image-wrapper"><img class="image-zoom" src="list/watch/omega2.jpg" width="200" height="200" alt="watch">
@@ -144,16 +246,82 @@
         <p>Diver Mens</p>
         <p><b>£1912</b></p>
         <p>Finance from <a style="color:maroon;" >£194.69</a> a month</p>
+        <!--details-->
+        <div>
+            <button class="btn7" onclick="document.getElementById('id04').style.display='block'" style="width:auto;">Details</button>
+        
+            <div id="id04" class="modal4">
+          
+            <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-027-03-0020-lifestyle1.jpg" alt="Avatar" class="avatar">
+              <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-027-03-0020.jpg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <h3>OMEGA Seamaster Diver 300M Co-Axial 42mm Mens Watch</h3>
+              <h4>Product specification</h4>
+              <p> Precision tests and have received a certificate from the official body, COSC. Main complications of this model includes a helium escape valve which allows the release of helium when worn for professional use in pressure chambers, a self-locking crown used for highly water resistant divers' watches and a unidirectional rotating bezel, particularly useful for divers who cannot afford to accidentally turn the bezel in th e wrong direction. On the dial, 
+                  the skeleton hands and raised indices are rhodium plated and filled with white Super-Lumi-Nova for maximum readability. 
+                  Water resistant to 300m.</p>
+             <p> SKU:	2-027-03-0020</p>
+             <p>Model Number:		21032422001001</p>
+             <p>Guarantee:	OMEGA Official 5 Year Guarantee</p>
+             <p>Glass Type:	Sapphire Glass</p>
+             <p>Case Width:	42mm</p>
+             <p>Case Depth:	13.5mm</p>
+             <p>Case Material:	Stainless Steel</p>
+             <p>Features:	Chronometer | Anti-Magnetic | Date Window</p>
+            </div>
+        
+            </div>
+            </div>
+            </div>
+            <!--details-->
     </div>
 </div>
 
 <div class="flex-container6">
     <div class="cell">
-        <div class="image-wrapper"><img class="image-zoom" src="list/watch/iwc4.jpg" width="200" height="200" alt="watch"></div>
+        <div class="image-wrapper"><img class="image-zoom" src="list/watch/iwc44.jpg" width="200" height="200" alt="watch"></div>
         <p>IWC Portofino Mens Watch</p>
         <p>IW391031</p>
         <p><b>£2512</b></p>
         <p>Finance from <a style="color:maroon;">£149.69</a> a month</p>
+        <!--details-->
+        <div>
+            <button class="btn7" onclick="document.getElementById('id05').style.display='block'" style="width:auto;">Details</button>
+        
+            <div id="id05" class="modal5">
+          
+            <div class="modal-content animate">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id05').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-119-01-0048.jpg" alt="Avatar" class="avatar">
+              <img src="https://www.chisholmhunter.co.uk/media/catalog/product/cache/1/image/550x550/9df78eab33525d08d6e5fb8d27136e95/2/-/2-119-01-0048-back.jpg" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <h3>OMEGA Seamaster Diver 300M Co-Axial 42mm Mens Watch</h3>
+              <h4>Product specification</h4>
+              <p> Precision tests and have received a certificate from the official body, COSC. Main complications of this model includes a helium escape valve which allows the release of helium when worn for professional use in pressure chambers, a self-locking crown used for highly water resistant divers' watches and a unidirectional rotating bezel, particularly useful for divers who cannot afford to accidentally turn the bezel in th e wrong direction. On the dial, 
+                  the skeleton hands and raised indices are rhodium plated and filled with white Super-Lumi-Nova for maximum readability. 
+                  Water resistant to 300m.</p>
+             <p> SKU:	2-027-03-0020</p>
+             <p>Model Number:		21032422001001</p>
+             <p>Guarantee:	OMEGA Official 5 Year Guarantee</p>
+             <p>Glass Type:	Sapphire Glass</p>
+             <p>Case Width:	42mm</p>
+             <p>Case Depth:	13.5mm</p>
+             <p>Case Material:	Stainless Steel</p>
+             <p>Features:	Chronometer | Anti-Magnetic | Date Window</p>
+            </div>
+        
+            </div>
+            </div>
+            </div>
+            <!--details-->
     </div>
     <div class="cell">
         <div class="image-wrapper"><img class="image-zoom" src="list/watch/vacheron1.jpg" width="200" height="200" alt="watch"></div>
