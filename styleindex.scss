@@ -510,7 +510,9 @@ input[type=text] {
   }
   
   /* The Modal (background) */
-  .modal, .modal2, .modal3, .modal4, .modal5, .modal6, .modal7, .modal8, .modal9 {
+  .modal, .modal2, .modal3, .modal4, .modal5, 
+  .modal6, .modal7, .modal8, .modal9, .modal10, 
+  .modal11, .modal12, .modal13, .modal14 {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
@@ -576,3 +578,21 @@ input[type=text] {
   }
 
 /*style details */
+
+/* hover image*/
+.imageBox {
+	position: relative;
+	float: left;
+  }
+  
+  .imageBox .hoverImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+  }
+  
+  .imageBox:hover .hoverImg {
+	display: block;
+  }
+/* hover image*/

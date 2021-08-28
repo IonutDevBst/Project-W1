@@ -189,3 +189,64 @@ window.onscroll = function(){
 
 */
 /* Section active */
+
+
+
+/*Section details */
+// Get the modal
+var modal01 = document.getElementById('id01');
+var modal2 = document.getElementById('id2');
+var modal3 = document.getElementById('id3');
+var modal4 = document.getElementById('id4');
+var modal5 = document.getElementById('id5');
+var modal6 = document.getElementById('id6');
+var modal7 = document.getElementById('id7');
+var modal8 = document.getElementById('id8');
+var modal9 = document.getElementById('id9');
+var modal10 = document.getElementById('id10');
+var modal11 = document.getElementById('id11');
+var modal12 = document.getElementById('id12');
+var modal13 = document.getElementById('id13');
+var modal14 = document.getElementById('id14');
+var modal15 = document.getElementById('id15');
+var modal16 = document.getElementById('id16');
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal01) {
+        modal01.style.display = "none";
+    } else if (event.target == modal2) {
+        modal2.style.display = "none";
+    }  else if (event.target == modal3) {
+        modal3.style.display = "none";
+    } else if (event.target == modal4) {
+        modal4.style.display = "none";
+    } else if (event.target == modal5) {
+        modal5.style.display = "none";
+    } else if (event.target == modal6) {
+        modal6.style.display = "none";
+    } else if (event.target == modal7) {
+        modal7.style.display = "none";
+    } else if (event.target == modal8) {
+        modal8.style.display = "none";
+    } else if (event.target == modal9) {
+        modal9.style.display = "none";
+    } else if (event.target == modal10) {
+        modal10.style.display = "none";
+    } else if (event.target == modal11) {
+        modal11.style.display = "none";
+    } else if (event.target == modal12) {
+        modal12.style.display = "none";
+    } else if (event.target == modal13) {
+        modal13.style.display = "none";
+    } else if (event.target == modal14) {
+        modal14.style.display = "none";
+    } else if (event.target == modal15) {
+        modal15.style.display = "none";
+    } else if (event.target == modal16) {
+        modal16.style.display = "none";
+    }
+}
+
+/*Section details */
