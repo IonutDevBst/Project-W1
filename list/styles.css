@@ -71,10 +71,9 @@ li {
 }
 
 .menu ul li a:hover {
-  background-color: darkred;
   cursor: pointer;
-  color: white;
-  border-radius: 5px;
+  color: #ada5a5;
+  border-bottom: 1px solid;
 }
 
 .submenu1 {
@@ -107,7 +106,7 @@ li {
 }
 
 .submenu2 ul li a:hover {
-  background-color: slategray;
+  border-bottom: 1px solid;
 }
 
 .header {
@@ -132,7 +131,8 @@ li {
 }
 
 .header li a:hover {
-  background-color: darkred;
+  border-bottom: 1px solid;
+  color: #ada5a5;
 }
 
 .retailpic {
@@ -183,8 +183,9 @@ li {
 }
 
 .upmenu2 ul li a:hover {
-  background-color: slategray;
+  color: #af9f9f;
   cursor: pointer;
+  border-bottom: 1px solid;
 }
 
 .band-name {
@@ -733,4 +734,7 @@ img.avatar {
 }
 
 /*style details */
+.logo:hover {
+  opacity: 0.4;
+}
 /*# sourceMappingURL=styles.css.map */

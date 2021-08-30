@@ -64,10 +64,9 @@ li {
 				text-decoration: none;
 				color: rgb(7, 12, 22);
 				&:hover {
-					background-color: darkred;
 					cursor: pointer;
-					color: white;
-					border-radius: 5px;
+					color: rgb(173, 165, 165);
+					border-bottom: 1px solid;
 				}
 			}
 		}
@@ -92,7 +91,7 @@ li {
 		li {
 			a {
 				&:hover {
-					background-color: slategray;
+					border-bottom: 1px solid;
 				}
 			}
 		}
@@ -114,7 +113,8 @@ li {
 		a {
 			color: black;
 			&:hover {
-				background-color: darkred;
+				border-bottom: 1px solid;
+				color: rgb(173, 165, 165);
 			}
 		}
 	}
@@ -150,8 +150,9 @@ li {
 				color: rgb(58, 55, 55);
 				font-size: 11px;
 				&:hover {
-					background-color: slategray;
+					color: rgb(175, 159, 159);
 					cursor: pointer;
+					border-bottom: 1px solid;
 				}
 			}
 		}
@@ -602,3 +603,7 @@ input[type=text] {
   }
 
 /*style details */
+
+.logo:hover {
+	opacity: 0.4;
+	}

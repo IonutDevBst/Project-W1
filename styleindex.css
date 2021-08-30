@@ -102,16 +102,15 @@ body {
   padding: 15px;
 }
 
-.menu ul li a {
+.menu ul li a, .menu ul li img {
   text-decoration: none;
   color: #070c16;
 }
 
-.menu ul li a:hover {
-  background-color: darkred;
+.menu ul li a:hover, .menu ul li img:hover {
   cursor: pointer;
-  color: white;
-  border-radius: 5px;
+  color: #ada5a5;
+  border-bottom: 1px solid;
 }
 
 /*
@@ -154,7 +153,7 @@ font-family: 'Italiana', serif;
 }
 
 .submenu2 ul li a:hover {
-  background-color: slategray;
+  border-bottom: 1px solid;
 }
 
 .header {
@@ -179,7 +178,8 @@ font-family: 'Italiana', serif;
 }
 
 .header li a:hover {
-  background-color: darkred;
+  border-bottom: 1px solid;
+  color: #ada5a5;
 }
 
 .retailpic {
@@ -235,8 +235,9 @@ font-family: 'Italiana', serif;
 }
 
 .upmenu2 ul li a:hover {
-  background-color: slategray;
+  color: #af9f9f;
   cursor: pointer;
+  border-bottom: 1px solid;
 }
 
 .main-footer-container {
@@ -734,4 +735,7 @@ img.avatar {
 }
 
 /* hover image*/
+.logo:hover {
+  opacity: 0.4;
+}
 /*# sourceMappingURL=styleindex.css.map */
