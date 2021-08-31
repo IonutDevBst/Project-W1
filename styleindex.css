@@ -1,47 +1,3 @@
-/*Meniul principal */
-/*End Meniu*/
-/*Style Footer */
-/*end Footer */
-/*cele 3 coloane */
-/*End 3 coloane*/
-/*Start 6 columns*/
-/*End 6 columns*/
-/* Section high luxury*/
-/*END  Section high luxury*/
-/*Prima imagine OMEGA space*/
-/*End Omega space*/
-/*klarna style*/
-/*klarna style*/
-/*Just in style*/
-/*END Just in style*/
-/*  Responsive mobile  */
-/*
-    @media only screen and (max-width: 790px) {
-        .allheader{
-            width: 100%;
-        }
-    
-        .flex-container6 {
-            flex-wrap: wrap;
-             
-         }
-         .omega1container {
-             flex-wrap: wrap;
-            
-         }
-    
-       
-    }
-    */
-/*END Responsive mobile  */
-/* Style trust pilot*/
-/*END  Style trust pilot*/
-/* Style search button*/
-/*END Style search button*/
-/*Section between*/
-/*Section between*/
-/*Start Section zoom pictures */
-/*End Section zoom pictures */
 html {
   font-size: 14px;
 }
@@ -54,36 +10,6 @@ html {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Noto Sans', sans-serif;
-  font-stretch: extra-expanded;
-}
-
-h2 {
-  font-family: 'Noto Sans', sans-serif;
-  font-stretch: extra-expanded;
-}
-
-h3 {
-  font-family: 'Noto Sans', sans-serif;
-  font-stretch: extra-expanded;
-}
-
-h4 {
-  font-family: 'Noto Sans', sans-serif;
-  font-stretch: extra-expanded;
-}
-
-h5 {
-  font-family: 'Noto Sans', sans-serif;
-  font-stretch: extra-expanded;
-}
-
-h6 {
-  font-family: 'Noto Sans', sans-serif;
-  font-stretch: extra-expanded;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -91,6 +17,7 @@ body {
   color: #777;
 }
 
+/*Meniul principal */
 .menu {
   border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
@@ -156,7 +83,7 @@ font-family: 'Italiana', serif;
   border-bottom: 1px solid;
 }
 
-.header {
+.upmenu3 {
   border: solid white;
   background-color: white;
   text-align: right;
@@ -168,16 +95,16 @@ font-family: 'Italiana', serif;
           justify-content: space-between;
 }
 
-.header ul li {
+.upmenu3 ul li {
   display: inline;
   padding: 15px;
 }
 
-.header li a {
+.upmenu3 li a {
   color: black;
 }
 
-.header li a:hover {
+.upmenu3 li a:hover {
   border-bottom: 1px solid;
   color: #ada5a5;
 }
@@ -240,6 +167,8 @@ font-family: 'Italiana', serif;
   border-bottom: 1px solid;
 }
 
+/*End Meniu*/
+/*Start Style Footer */
 .main-footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,7 +231,9 @@ footer {
 }
 
 .sector ul li a:hover {
-  background-color: grey;
+  color: #af9f9f;
+  cursor: pointer;
+  border-bottom: 1px solid;
 }
 
 .sosumi {
@@ -350,6 +281,7 @@ footer {
           box-shadow: 1px 1px 1px 1px #888888;
 }
 
+/*end Footer */
 .title3 {
   padding: 10px;
   margin: auto;
@@ -506,6 +438,7 @@ input[type=text] {
           transform: scale(1.15);
 }
 
+/*  Responsive mobile  */
 @media only screen and (max-width: 700px) {
   .column {
     width: 100%;
@@ -550,7 +483,7 @@ input[type=text] {
     width: 100%;
     margin: 0;
   }
-  .header {
+  .upmenu3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -596,6 +529,7 @@ input[type=text] {
   }
 }
 
+/* End Responsive mobile  */
 /*style details */
 /* Set a style for all buttons */
 .btn7 {

@@ -109,7 +109,7 @@ li {
   border-bottom: 1px solid;
 }
 
-.header {
+.upmenu3 {
   border: solid white;
   background-color: white;
   text-align: right;
@@ -121,16 +121,16 @@ li {
           justify-content: space-between;
 }
 
-.header ul li {
+.upmenu3 ul li {
   display: inline;
   padding: 15px;
 }
 
-.header li a {
+.upmenu3 li a {
   color: black;
 }
 
-.header li a:hover {
+.upmenu3 li a:hover {
   border-bottom: 1px solid;
   color: #ada5a5;
 }
