@@ -519,7 +519,7 @@ input[type=text] {
 	to {transform: scale(1)}
   }
   
-  /* Change styles for span and cancel button on extra small screens */
+  /*  styles small screens */
   @media screen and (max-width: 300px) {
 	span.psw {
 	   display: block;
@@ -552,5 +552,16 @@ input[type=text] {
 
 
 .logo:hover {
-		opacity: 0.4;
+	opacity: 0.4;
 		}
+
+		.icon {
+			vertical-align: middle;
+			font-size: 10px;
+			color: black;
+		  }
+		  .text {
+			color: black;
+			text-decoration: none;
+		  }
+		 
