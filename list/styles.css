@@ -584,6 +584,10 @@ input[type=text] {
         align-content: start;
     margin: 0;
   }
+  .upmenu3 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
